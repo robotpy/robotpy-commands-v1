@@ -15,5 +15,8 @@ classes:
       m_command:
     methods:
       ButtonScheduler:
+        keepalive:
+        - [1, 2]
+        - [1, 3]
       Execute:
       Start:

@@ -11,4 +11,6 @@ classes:
     shared_ptr: true
     methods:
       POVButton:
+        keepalive:
+        - [1, 2]
       Get:

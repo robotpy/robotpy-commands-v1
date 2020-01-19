@@ -15,11 +15,19 @@ classes:
       AddSequential:
         overloads:
           Command*:
+            keepalive:
+            - [1, 2]
           Command*, double:
+            keepalive:
+            - [1, 2]
       AddParallel:
         overloads:
           Command*:
+            keepalive:
+            - [1, 2]
           Command*, double:
+            keepalive:
+            - [1, 2]
       IsInterruptible:
       GetSize:
       Initialize:

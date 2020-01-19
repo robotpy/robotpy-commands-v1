@@ -19,11 +19,23 @@ classes:
           double, double, double, double:
           double, double, double, double, double:
           wpi::Twine&, double, double, double, Subsystem&:
+            keepalive:
+            - [1, 6]
           wpi::Twine&, double, double, double, double, Subsystem&:
+            keepalive:
+            - [1, 7]
           wpi::Twine&, double, double, double, double, double, Subsystem&:
+            keepalive:
+            - [1, 8]
           double, double, double, Subsystem&:
+            keepalive:
+            - [1, 5]
           double, double, double, double, Subsystem&:
+            keepalive:
+            - [1, 6]
           double, double, double, double, double, Subsystem&:
+            keepalive:
+            - [1, 7]
       SetSetpointRelative:
       PIDWrite:
       PIDGet:

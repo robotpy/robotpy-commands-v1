@@ -16,12 +16,22 @@ classes:
           wpi::Twine&:
           double:
           Subsystem&:
+            keepalive:
+            - [1, 2]
           wpi::Twine&, double:
           wpi::Twine&, Subsystem&:
+            keepalive:
+            - [1, 3]
           double, Subsystem&:
+            keepalive:
+            - [1, 3]
           wpi::Twine&, double, Subsystem&:
+            keepalive:
+            - [1, 4]
       TimeSinceInitialized:
       Requires:
+        keepalive:
+        - [1, 2]
       Start:
       Run:
       Cancel:
@@ -34,6 +44,7 @@ classes:
       DoesRequire:
       GetRequirements:
       GetGroup:
+        return_value_policy: reference_internal
       SetRunWhenDisabled:
       WillRunWhenDisabled:
       GetID:
@@ -46,6 +57,8 @@ classes:
       IsTimedOut:
       AssertUnlocked:
       SetParent:
+        keepalive:
+        - [1, 2]
       IsParented:
       ClearRequirements:
       Initialize:

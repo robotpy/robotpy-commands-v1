@@ -10,4 +10,6 @@ classes:
     shared_ptr: true
     methods:
       StartCommand:
+        keepalive:
+        - [1, 2]
       Initialize:

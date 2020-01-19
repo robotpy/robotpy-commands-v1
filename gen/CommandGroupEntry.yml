@@ -19,4 +19,6 @@ classes:
         overloads:
           "":
           frc::Command*, frc::CommandGroupEntry::Sequence, double:
+            keepalive:
+            - [1, 2]
       IsTimedOut:

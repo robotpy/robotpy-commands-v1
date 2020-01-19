@@ -13,9 +13,13 @@ classes:
     methods:
       Subsystem:
       SetDefaultCommand:
+        keepalive:
+        - [1, 2]
       GetDefaultCommand:
       GetDefaultCommandName:
       SetCurrentCommand:
+        keepalive:
+        - [1, 2]
       GetCurrentCommand:
       GetCurrentCommandName:
       Periodic:

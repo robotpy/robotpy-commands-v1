@@ -12,11 +12,24 @@ classes:
     - SendableHelper<Trigger>
     methods:
       Trigger:
+        ignore: true
       Grab:
       Get:
       WhenActive:
+        keepalive:
+        - [1, 2]
       WhileActive:
+        keepalive:
+        - [1, 2]
       WhenInactive:
+        keepalive:
+        - [1, 2]
       CancelWhenActive:
+        keepalive:
+        - [1, 2]
       ToggleWhenActive:
+        keepalive:
+        - [1, 2]
       InitSendable:
+        keepalive:
+        - [1, 2]

@@ -21,8 +21,14 @@ classes:
       GetInstance:
         return_value_policy: reference
       AddCommand:
+        keepalive:
+        - [1, 2]
       AddButton:
+        keepalive:
+          - [1, 2]
       RegisterSubsystem:
+        keepalive:
+          - [1, 2]
       Run:
       Remove:
       RemoveAll:

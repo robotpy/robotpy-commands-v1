@@ -11,7 +11,17 @@ classes:
     methods:
       Button:
       WhenPressed:
+        keepalive:
+        - [1, 2]
       WhileHeld:
+        keepalive:
+        - [1, 2]
       WhenReleased:
+        keepalive:
+        - [1, 2]
       CancelWhenPressed:
+        keepalive:
+        - [1, 2]
       ToggleWhenPressed:
+        keepalive:
+        - [1, 2]
