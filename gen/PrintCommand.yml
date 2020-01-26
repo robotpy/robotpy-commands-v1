@@ -11,3 +11,4 @@ classes:
     methods:
       PrintCommand:
       Initialize:
+        rename: initialize

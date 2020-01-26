@@ -41,11 +41,20 @@ classes:
       PIDGet:
       InitSendable:
       GetPIDController:
+        rename: getPIDController
       _Initialize:
+        rename: _initialize
       _Interrupted:
+        rename: _interrupted
       _End:
+        rename: _end
       SetSetpoint:
+        rename: setSetpoint
       GetSetpoint:
+        rename: getSetpoint
       GetPosition:
+        rename: getPosition
       ReturnPIDInput:
+        rename: returnPIDInput
       UsePIDOutput:
+        rename: usePIDOutput

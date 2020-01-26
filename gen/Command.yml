@@ -53,21 +53,38 @@ classes:
       GetSubsystem:
       SetSubsystem:
       InitSendable:
+      # protected methods: rename for backwards compat
       SetTimeout:
+        rename: setTimeout
       IsTimedOut:
+        rename: isTimedOut
       AssertUnlocked:
+        rename: assertUnlocked
       SetParent:
+        rename: setParent
         keepalive:
         - [1, 2]
       IsParented:
+        rename: isParented
       ClearRequirements:
+        rename: clearRequirements
       Initialize:
+        rename: initialize
       Execute:
+        rename: execute
       IsFinished:
+        rename: isFinished
       End:
+        rename: end
       Interrupted:
+        rename: interrupted
       _Initialize:
+        rename: _initialize
       _Interrupted:
+        rename: _interrupted
       _Execute:
+        rename: _execute
       _End:
+        rename: _end
       _Cancel:
+        rename: _cancel
