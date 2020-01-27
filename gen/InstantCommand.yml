@@ -29,4 +29,6 @@ classes:
           "":
       function<void:
       _Initialize:
+        rename: _initialize
       IsFinished:
+        rename: isFinished

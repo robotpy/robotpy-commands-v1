@@ -14,3 +14,4 @@ classes:
           double:
           wpi::Twine&, double:
       IsFinished:
+        rename: isFinished

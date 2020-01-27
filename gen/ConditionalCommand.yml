@@ -21,6 +21,10 @@ classes:
             - [1, 4]
       Condition:
       _Initialize:
+        rename: _initialize
       _Cancel:
+        rename: _cancel
       IsFinished:
+        rename: isFinished
       _Interrupted:
+        rename: _interrupted
