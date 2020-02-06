@@ -31,5 +31,3 @@ classes:
         keepalive:
         - [1, 2]
       InitSendable:
-        keepalive:
-        - [1, 2]
