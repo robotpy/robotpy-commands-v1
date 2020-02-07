@@ -8,6 +8,7 @@ extra_includes:
 classes:
   TimedCommand:
     shared_ptr: true
+    nodelete: true
     methods:
       TimedCommand:
         overloads:

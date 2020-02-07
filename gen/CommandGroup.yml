@@ -7,6 +7,7 @@ extra_includes:
 classes:
   CommandGroup:
     shared_ptr: true
+    nodelete: true
     methods:
       CommandGroup:
         overloads:

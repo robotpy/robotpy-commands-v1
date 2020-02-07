@@ -8,6 +8,7 @@ extra_includes:
 classes:
   WaitForChildren:
     shared_ptr: true
+    nodelete: true
     methods:
       WaitForChildren:
         overloads:

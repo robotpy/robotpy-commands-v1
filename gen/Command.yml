@@ -7,6 +7,7 @@ extra_includes:
 classes:
   Command:
     shared_ptr: true
+    nodelete: true
     ignored_bases:
     - SendableHelper<Command>
     methods:
