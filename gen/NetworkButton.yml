@@ -9,6 +9,7 @@ extra_includes:
 classes:
   NetworkButton:
     shared_ptr: true
+    nodelete: true
     methods:
       NetworkButton:
         overloads:

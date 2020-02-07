@@ -8,6 +8,7 @@ extra_includes:
 classes:
   Button:
     shared_ptr: true
+    nodelete: true
     methods:
       Button:
       WhenPressed:

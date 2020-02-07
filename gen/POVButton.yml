@@ -9,6 +9,7 @@ extra_includes:
 classes:
   POVButton:
     shared_ptr: true
+    nodelete: true
     methods:
       POVButton:
         keepalive:

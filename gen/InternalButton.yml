@@ -9,6 +9,7 @@ extra_includes:
 classes:
   InternalButton:
     shared_ptr: true
+    nodelete: true
     methods:
       InternalButton:
         overloads:
