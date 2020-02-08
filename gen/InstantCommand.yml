@@ -29,6 +29,7 @@ classes:
             - [1, 2]
           "":
       function<void:
+        ignore: true
       _Initialize:
         rename: _initialize
       IsFinished:
