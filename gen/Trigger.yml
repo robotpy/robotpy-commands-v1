@@ -12,7 +12,6 @@ classes:
     - SendableHelper<Trigger>
     methods:
       Trigger:
-        ignore: true
       Grab:
       Get:
       WhenActive:
