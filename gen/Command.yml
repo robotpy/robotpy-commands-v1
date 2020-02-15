@@ -33,6 +33,8 @@ classes:
         keepalive:
         - [1, 2]
       Start:
+        keepalive:
+        - [1, 1]
       Run:
       Cancel:
       IsRunning:

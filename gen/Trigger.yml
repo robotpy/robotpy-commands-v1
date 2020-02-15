@@ -17,16 +17,21 @@ classes:
       WhenActive:
         keepalive:
         - [1, 2]
+        - [2, 1]
       WhileActive:
         keepalive:
         - [1, 2]
+        - [2, 1]
       WhenInactive:
         keepalive:
         - [1, 2]
+        - [2, 1]
       CancelWhenActive:
         keepalive:
         - [1, 2]
+        - [2, 1]
       ToggleWhenActive:
         keepalive:
         - [1, 2]
+        - [2, 1]
       InitSendable:

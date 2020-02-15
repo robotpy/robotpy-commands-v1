@@ -13,15 +13,20 @@ classes:
       WhenPressed:
         keepalive:
         - [1, 2]
+        - [2, 1]
       WhileHeld:
         keepalive:
         - [1, 2]
+        - [2, 1]
       WhenReleased:
         keepalive:
         - [1, 2]
+        - [2, 1]
       CancelWhenPressed:
         keepalive:
         - [1, 2]
+        - [2, 1]
       ToggleWhenPressed:
         keepalive:
         - [1, 2]
+        - [2, 1]
