@@ -7,6 +7,8 @@ extra_includes:
 - frc/commands/Command.h
 - frc/commands/CommandGroup.h
 - frc/commands/Subsystem.h
+- frc/smartdashboard/SmartDashboard.h
+- wpi_stringref_type_caster.h
 
 
 classes:
@@ -35,3 +37,12 @@ classes:
       ResetAll:
       SetEnabled:
       InitSendable:
+
+inline_code: |
+  cls_Scheduler.def_static("addToSmartDashboard", [](wpi::StringRef key) {
+    frc::SmartDashboard::PutData(key, Scheduler::GetInstance());
+  }, py::arg("key"),
+  "This is equivalent to ``wpilib.SmartDashboard.putData(key, Scheduler.getInstance())``.\n"
+  "Use this instead, as SmartDashboard.putData will fail if used directly\n"
+  "\n"
+  ":param key: the key\n");
