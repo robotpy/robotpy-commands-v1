@@ -42,6 +42,11 @@ classes:
       InitSendable:
       GetPIDController:
         rename: getPIDController
+        cpp_code: |
+          [](PIDCommand * self) {
+            PyErr_SetString(PyExc_NotImplementedError, "Using the PIDController directly is not supported");
+            throw py::error_already_set();
+          }
       _Initialize:
         rename: _initialize
       _Interrupted:
