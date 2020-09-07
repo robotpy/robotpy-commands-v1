@@ -45,6 +45,15 @@ classes:
       SetInterruptible:
       DoesRequire:
       GetRequirements:
+        cpp_code: |
+          [](Command * self) -> py::set {
+            py::set pyreqs;
+            auto& reqs = self->GetRequirements();
+            for (auto req: reqs) {
+              pyreqs.add(py::cast(req));
+            }
+            return std::move(pyreqs);
+          }
       GetGroup:
         return_value_policy: reference_internal
       SetRunWhenDisabled:

@@ -1,5 +1,5 @@
 
-*.py[cod]
+*.py[ciod]
 *.egg-info
 
 *.dll
