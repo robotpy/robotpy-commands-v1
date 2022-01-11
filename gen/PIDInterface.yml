@@ -1,0 +1,13 @@
+---
+
+classes:
+  PIDInterface:
+    methods:
+      PIDInterface:
+      SetPID:
+      GetP:
+      GetI:
+      GetD:
+      SetSetpoint:
+      GetSetpoint:
+      Reset:

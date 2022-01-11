@@ -1,14 +1,13 @@
 ---
 
 extra_includes:
-- frc/smartdashboard/SendableBuilder.h
+- networktables/NTSendableBuilder.h
 - frc/buttons/ButtonScheduler.h
 - frc/buttons/Trigger.h
 - frc/commands/Command.h
 - frc/commands/CommandGroup.h
 - frc/commands/Subsystem.h
 - frc/smartdashboard/SmartDashboard.h
-- wpi_stringref_type_caster.h
 
 
 classes:
@@ -16,9 +15,7 @@ classes:
     nodelete: true
     force_no_trampoline: true
     ignored_bases:
-    - ErrorBase
-    - Sendable
-    - SendableHelper<Scheduler>
+    - wpi::SendableHelper<Scheduler>
     methods:
       GetInstance:
         return_value_policy: reference
@@ -39,7 +36,7 @@ classes:
       InitSendable:
 
 inline_code: |
-  cls_Scheduler.def_static("addToSmartDashboard", [](wpi::StringRef key) {
+  cls_Scheduler.def_static("addToSmartDashboard", [](std::string_view key) {
     frc::SmartDashboard::PutData(key, Scheduler::GetInstance());
   }, py::arg("key"),
   "This is equivalent to ``wpilib.SmartDashboard.putData(key, Scheduler.getInstance())``.\n"

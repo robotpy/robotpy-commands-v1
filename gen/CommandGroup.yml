@@ -1,7 +1,7 @@
 ---
 
 extra_includes:
-- frc/smartdashboard/SendableBuilder.h
+- wpi/sendable/SendableBuilder.h
 - frc/commands/CommandGroup.h
 
 classes:
@@ -11,13 +11,13 @@ classes:
       CommandGroup:
         overloads:
           "":
-          wpi::Twine&:
+          std::string_view:
       AddSequential:
         overloads:
           Command*:
             keepalive:
             - [1, 2]
-          Command*, double:
+          Command*, units::second_t:
             keepalive:
             - [1, 2]
       AddParallel:
@@ -25,7 +25,7 @@ classes:
           Command*:
             keepalive:
             - [1, 2]
-          Command*, double:
+          Command*, units::second_t:
             keepalive:
             - [1, 2]
       IsInterruptible:

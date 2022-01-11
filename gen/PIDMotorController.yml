@@ -1,0 +1,14 @@
+---
+
+classes:
+  PIDMotorController:
+    methods:
+      PIDMotorController:
+      Set:
+      Get:
+      SetInverted:
+      GetInverted:
+      Disable:
+      StopMotor:
+      PIDWrite:
+      InitSendable:

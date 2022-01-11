@@ -1,0 +1,6 @@
+---
+
+classes:
+  PIDAnalogPotentiometer:
+    methods:
+      PIDGet:
