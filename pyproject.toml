@@ -61,14 +61,14 @@ WaitCommand = "frc/commands/WaitCommand.h"
 WaitForChildren = "frc/commands/WaitForChildren.h"
 WaitUntilCommand = "frc/commands/WaitUntilCommand.h"
 
-# frc/pidwrappers -- currently broken
-# PIDAnalogAccelerometer = "frc/pidwrappers/PIDAnalogAccelerometer.h"
-# PIDAnalogGyro = "frc/pidwrappers/PIDAnalogGyro.h"
-# PIDAnalogInput = "frc/pidwrappers/PIDAnalogInput.h"
-# PIDAnalogPotentiometer = "frc/pidwrappers/PIDAnalogPotentiometer.h"
-# PIDEncoder = "frc/pidwrappers/PIDEncoder.h"
-# PIDMotorController = "frc/pidwrappers/PIDMotorController.h"
-# PIDUltrasonic = "frc/pidwrappers/PIDUltrasonic.h"
+# frc/pidwrappers
+PIDAnalogAccelerometer = "frc/pidwrappers/PIDAnalogAccelerometer.h"
+PIDAnalogGyro = "frc/pidwrappers/PIDAnalogGyro.h"
+PIDAnalogInput = "frc/pidwrappers/PIDAnalogInput.h"
+PIDAnalogPotentiometer = "frc/pidwrappers/PIDAnalogPotentiometer.h"
+PIDEncoder = "frc/pidwrappers/PIDEncoder.h"
+PIDMotorController = "frc/pidwrappers/PIDMotorController.h"
+PIDUltrasonic = "frc/pidwrappers/PIDUltrasonic.h"
 
 [tool.robotpy-build.metadata]
 name = "robotpy-commands-v1"
