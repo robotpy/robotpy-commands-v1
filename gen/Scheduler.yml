@@ -12,13 +12,16 @@ extra_includes:
 
 classes:
   Scheduler:
-    nodelete: true
     force_no_trampoline: true
     ignored_bases:
     - wpi::SendableHelper<Scheduler>
     methods:
       GetInstance:
-        return_value_policy: reference
+        cpp_code: |
+          []() -> std::shared_ptr<frc::Scheduler> {
+            static std::shared_ptr<frc::Scheduler> s = std::unique_ptr<frc::Scheduler, py::nodelete>(frc::Scheduler::GetInstance());
+            return s;
+          }
       AddCommand:
         keepalive:
         - [2, 2]
