@@ -22,5 +22,5 @@ using this pattern, we recommend that you consult the Java version of the
 .. toctree::
 
   commandbased
-  wpilib.buttons
-  wpilib.command
+  commands1
+  commands1.buttons

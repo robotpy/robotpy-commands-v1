@@ -1,5 +1,5 @@
-from wpilib import TimedRobot
-from wpilib.command import Scheduler
+from wpilib import DriverStation, TimedRobot, reportError
+from commands1 import Scheduler
 
 
 class CommandBasedRobot(TimedRobot):
@@ -23,7 +23,7 @@ class CommandBasedRobot(TimedRobot):
         try:
             self.scheduler.run()
         except Exception as error:
-            if not self.ds.isFMSAttached():
+            if not DriverStation.isFMSAttached():
                 raise
 
             """Just to be safe, stop all running commands."""
@@ -43,4 +43,4 @@ class CommandBasedRobot(TimedRobot):
         more complex behavior, override this method in your robot class.
         """
 
-        self.ds.reportError(str(error), printTrace=True)
+        reportError(str(error), printTrace=True)

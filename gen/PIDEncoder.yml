@@ -2,6 +2,7 @@
 
 classes:
   PIDEncoder:
+    subpackage: command
     methods:
       PIDGet:
 

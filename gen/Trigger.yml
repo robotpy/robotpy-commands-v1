@@ -7,6 +7,7 @@ extra_includes:
 
 classes:
   Trigger:
+    subpackage: button
     shared_ptr: true
     ignored_bases:
     - wpi::SendableHelper<Trigger>

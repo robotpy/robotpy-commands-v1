@@ -9,6 +9,7 @@ extra_includes:
 classes:
   ButtonScheduler:
     shared_ptr: true
+    subpackage: button
     attributes:
       m_pressedLast:
       m_button:

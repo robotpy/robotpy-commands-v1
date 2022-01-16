@@ -10,7 +10,7 @@ import os
 from os.path import abspath, dirname
 
 # Project must be built+installed to generate docs
-import wpilib.command
+import commands1
 
 # -- RTD configuration ------------------------------------------------
 
@@ -54,9 +54,9 @@ copyright = "2020, RobotPy development team"
 # built documents.
 #
 # The short X.Y version.
-version = ".".join(wpilib.command.__version__.split(".")[:2])
+version = ".".join(commands1.__version__.split(".")[:2])
 # The full version, including alpha/beta/rc tags.
-release = wpilib.command.__version__
+release = commands1.__version__
 
 autoclass_content = "both"
 
@@ -140,5 +140,5 @@ generate_sidebar(
 
 root = abspath(dirname(__file__))
 
-gen_package(root, "wpilib.buttons")
-gen_package(root, "wpilib.command")
+gen_package(root, "commands1")
+gen_package(root, "commands1.buttons")

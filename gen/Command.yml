@@ -9,6 +9,7 @@ classes:
     shared_ptr: true
     ignored_bases:
     - wpi::SendableHelper<Command>
+    subpackage: command
     methods:
       Command:
         overloads:

@@ -2,6 +2,7 @@
 
 classes:
   PIDMotorController:
+    subpackage: command
     methods:
       PIDMotorController:
       Set:

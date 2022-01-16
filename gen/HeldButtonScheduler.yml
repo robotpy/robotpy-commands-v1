@@ -9,6 +9,7 @@ extra_includes:
 classes:
   HeldButtonScheduler:
     shared_ptr: true
+    subpackage: button
     methods:
       HeldButtonScheduler:
         keepalive:

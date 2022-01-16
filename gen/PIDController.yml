@@ -4,6 +4,7 @@ classes:
   PIDController:
     ignored_bases:
     - Controller
+    subpackage: command
     methods:
       PIDController:
         overloads:

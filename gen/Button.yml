@@ -8,6 +8,7 @@ extra_includes:
 classes:
   Button:
     shared_ptr: true
+    subpackage: button
     methods:
       Button:
       WhenPressed:

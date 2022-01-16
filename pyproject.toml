@@ -5,9 +5,9 @@ requires = [
 ]
 
 [tool.robotpy-build]
-base_package = "wpilib.command"
+base_package = "commands1"
 
-[tool.robotpy-build.wrappers."wpilib.command".maven_lib_download]
+[tool.robotpy-build.wrappers."commands1._impl".maven_lib_download]
 artifact_id = "wpilibOldCommands-cpp"
 group_id = "edu.wpi.first.wpilibOldCommands"
 repo_url = "https://frcmaven.wpi.edu/artifactory/release"
@@ -15,14 +15,14 @@ version = "2022.2.1"
 
 libs = ["wpilibOldCommands"]
 
-[tool.robotpy-build.wrappers."wpilib.command"]
+[tool.robotpy-build.wrappers."commands1._impl"]
 name = "commands_v1"
-sources = ["wpilib/command/src/commands.cpp"]
-depends = ["wpilibc", "wpimath", "wpiutil", "ntcore", "wpilib_core"]
+sources = ["commands1/_impl/command.cpp"]
+depends = ["wpiutil", "ntcore", "wpimath_cpp", "wpimath_geometry", "wpilibc", "wpilib_core"]
 
 generation_data = "gen"
 
-[tool.robotpy-build.wrappers."wpilib.command".autogen_headers]
+[tool.robotpy-build.wrappers."commands1._impl".autogen_headers]
 # frc
 PIDBase = "frc/PIDBase.h"
 PIDController = "frc/PIDController.h"
@@ -70,9 +70,11 @@ PIDEncoder = "frc/pidwrappers/PIDEncoder.h"
 PIDMotorController = "frc/pidwrappers/PIDMotorController.h"
 PIDUltrasonic = "frc/pidwrappers/PIDUltrasonic.h"
 
-# Tell setuptools to include this namespaced package
+# Tell setuptools to include these namespaced packages
 [tool.robotpy-build.wrappers."wpilib.buttons"]
 name = "commands_v1_buttons"
+[tool.robotpy-build.wrappers."wpilib.command"]
+name = "commands_v1_command"
 
 [tool.robotpy-build.metadata]
 name = "robotpy-commands-v1"

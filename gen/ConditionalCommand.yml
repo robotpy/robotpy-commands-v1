@@ -8,6 +8,7 @@ extra_includes:
 classes:
   ConditionalCommand:
     shared_ptr: true
+    subpackage: command
     methods:
       ConditionalCommand:
         overloads:

@@ -8,6 +8,7 @@ extra_includes:
 
 classes:
   ToggleButtonScheduler:
+    subpackage: button
     shared_ptr: true
     methods:
       ToggleButtonScheduler:

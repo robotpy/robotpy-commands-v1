@@ -9,6 +9,7 @@ extra_includes:
 classes:
   CancelButtonScheduler:
     shared_ptr: true
+    subpackage: button
     methods:
       CancelButtonScheduler:
         keepalive:

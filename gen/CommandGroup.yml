@@ -7,6 +7,7 @@ extra_includes:
 classes:
   CommandGroup:
     shared_ptr: true
+    subpackage: command
     methods:
       CommandGroup:
         overloads:

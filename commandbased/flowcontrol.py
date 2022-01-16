@@ -3,7 +3,7 @@ These functions can be used to make programming CommandGroups much more
 intuitive. For more information, check each method's docstring.
 """
 
-from wpilib.command import Command, CommandGroup, ConditionalCommand
+from commands1 import Command, CommandGroup, ConditionalCommand
 from commandbased.cancelcommand import CancelCommand
 
 import inspect

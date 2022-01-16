@@ -5,7 +5,7 @@
 /_sidebar.rst.inc
 /_sidebar.toml
 
-/wpilib.buttons.rst
-/wpilib.buttons
-/wpilib.command.rst
-/wpilib.command
+/commands1.buttons.rst
+/commands1.buttons
+/commands1.rst
+/commands1

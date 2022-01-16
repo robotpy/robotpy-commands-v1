@@ -1,29 +1,7 @@
-from wpilib.command import (
-    Button,
-    ButtonScheduler,
-    CancelButtonScheduler,
-    HeldButtonScheduler,
-    InternalButton,
-    JoystickButton,
-    NetworkButton,
-    POVButton,
-    PressedButtonScheduler,
-    ReleasedButtonScheduler,
-    ToggleButtonScheduler,
-    Trigger,
+import warnings
+
+warnings.warn(
+    "wpilib.buttons has moved to commands1.buttons", FutureWarning, stacklevel=2
 )
 
-__all__ = [
-    "Button",
-    "ButtonScheduler",
-    "CancelButtonScheduler",
-    "HeldButtonScheduler",
-    "InternalButton",
-    "JoystickButton",
-    "NetworkButton",
-    "POVButton",
-    "PressedButtonScheduler",
-    "ReleasedButtonScheduler",
-    "ToggleButtonScheduler",
-    "Trigger",
-]
+from commands1.buttons import *

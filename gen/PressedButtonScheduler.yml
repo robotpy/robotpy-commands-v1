@@ -8,6 +8,7 @@ extra_includes:
 
 classes:
   PressedButtonScheduler:
+    subpackage: button
     shared_ptr: true
     methods:
       PressedButtonScheduler:

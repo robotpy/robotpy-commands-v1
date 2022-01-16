@@ -8,6 +8,7 @@ extra_includes:
 classes:
   CommandGroupEntry:
     shared_ptr: true
+    subpackage: command
     attributes:
       m_timeout:
       m_command:

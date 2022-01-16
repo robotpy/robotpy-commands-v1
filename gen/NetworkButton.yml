@@ -9,6 +9,7 @@ extra_includes:
 classes:
   NetworkButton:
     shared_ptr: true
+    subpackage: button
     methods:
       NetworkButton:
         overloads:

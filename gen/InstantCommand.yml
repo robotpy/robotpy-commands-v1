@@ -8,6 +8,7 @@ extra_includes:
 classes:
   InstantCommand:
     shared_ptr: true
+    subpackage: command
     methods:
       InstantCommand:
         overloads:
