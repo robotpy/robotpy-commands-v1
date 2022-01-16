@@ -70,6 +70,10 @@ PIDEncoder = "frc/pidwrappers/PIDEncoder.h"
 PIDMotorController = "frc/pidwrappers/PIDMotorController.h"
 PIDUltrasonic = "frc/pidwrappers/PIDUltrasonic.h"
 
+# Tell setuptools to include this namespaced package
+[tool.robotpy-build.wrappers."wpilib.buttons"]
+name = "commands_v1_buttons"
+
 [tool.robotpy-build.metadata]
 name = "robotpy-commands-v1"
 description = "WPILib command framework"
