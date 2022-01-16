@@ -18,7 +18,7 @@ libs = ["wpilibOldCommands"]
 [tool.robotpy-build.wrappers."wpilib.command"]
 name = "commands_v1"
 sources = ["wpilib/command/src/commands.cpp"]
-depends = ["wpilibc", "wpiutil", "ntcore", "wpilib_core"]
+depends = ["wpilibc", "wpimath", "wpiutil", "ntcore", "wpilib_core"]
 
 generation_data = "gen"
 
